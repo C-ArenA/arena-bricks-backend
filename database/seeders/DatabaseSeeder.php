@@ -13,11 +13,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Cecilia Arena',
+            'email' => 'arena.a.cecilia.v@gmail.com',
+        ]);
+        User::factory()->create([
+            'name' => 'Carlos Arena',
+            'email' => 'carlostata.ca@gmail.com',
+        ]);
+        $this->call([
+            BrickSeeder::class
         ]);
     }
 }
