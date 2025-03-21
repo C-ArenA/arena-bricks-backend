@@ -9,4 +9,14 @@ class Brick extends Model
 {
     /** @use HasFactory<\Database\Factories\BrickFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'description',
+        'image',
+        'length',
+        'height',
+        'width',
+        'is_produced',
+    ];
 }
