@@ -22,7 +22,7 @@ class BrickResource extends JsonResource
             'length' => $this->length_mm,
             'height' => $this->height_mm,
             'width' => $this->width_mm,
-            'is_produced' => $this->is_produced
+            'is_produced' => $this->is_produced? true : false
         ];
     }
 }
