@@ -1,0 +1,21 @@
+meta {
+  name: Delete Produced Brick
+  type: http
+  seq: 5
+}
+
+delete {
+  url: 127.0.0.1:8000/api/v1/produced-bricks/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 5
+}
+
+body:json {
+  {
+    "id": 2
+  }
+}
