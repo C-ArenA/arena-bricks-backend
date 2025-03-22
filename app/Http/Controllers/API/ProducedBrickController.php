@@ -31,6 +31,10 @@ class ProducedBrickController extends Controller
         ]);
 
         $brick = Brick::find($request->id);
+        // Si el ladrillo no existe envía error de validación
+        if (!$brick) {
+            return response()->json(['message' => 'Ladrillo inexistente'], 422);
+        }
         if($brick->is_produced){
             return response()->json(['message' => 'Este ladrillo ya está marcado como producido'], 422);
         }
