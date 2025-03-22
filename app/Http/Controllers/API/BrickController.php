@@ -15,7 +15,7 @@ class BrickController extends Controller
      */
     public function index(): JsonResource
     {
-        $bricks = Brick::where('is_produced', true)->get();
+        $bricks = Brick::all();
         return BrickResource::collection($bricks);
     }
 
