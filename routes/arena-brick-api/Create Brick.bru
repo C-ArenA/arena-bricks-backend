@@ -1,0 +1,21 @@
+meta {
+  name: Create Brick
+  type: http
+  seq: 7
+}
+
+post {
+  url: 127.0.0.1:8000/api/v1/bricks
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Nuevito 2",
+    "description": "Un ladrillo nuevo para la ciudad",
+    "length_mm": 50,
+    "height_mm": 600,
+    "width_mm": 100
+  }
+}
