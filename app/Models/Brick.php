@@ -14,9 +14,9 @@ class Brick extends Model
         'name',
         'description',
         'image',
-        'length',
-        'height',
-        'width',
+        'length_mm',
+        'height_mm',
+        'width_mm',
         'is_produced',
     ];
 }
